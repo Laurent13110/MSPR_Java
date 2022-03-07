@@ -1,8 +1,22 @@
 @font-face {
-    font-family:"Roboto" ;
-    src: url(/police/Roboto-Medium.ttf);
+    font-family:'Roboto' ;
+    src: url(/police/Roboto-Medium.ttf) format('ttf');
 }
 
+body{
+    font-family: 'Roboto-Light';
+    font-size: small;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-size: medium;
+}
+
+.button{
+    font-family: 'Roboto';
+    font-size: medium;
+}
 
 .centrers
 {
