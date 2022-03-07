@@ -3,5 +3,9 @@ Oie
 Surveillance entrepot
 AOie:$apr1$jyknbxrc$Dcn/2QWW0iULHMa4F/VNF.
 
+gants
+brassard
+menottes
+talky
 lampe
 kit
