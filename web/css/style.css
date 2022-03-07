@@ -16,8 +16,8 @@ body{
 .button{
     font-family: 'Roboto';
     font-size: medium;
-    background-color: #379EC1;
-    
+    color:  #379EC1;
+    text-decoration: none;
 }
 
 .centrer
