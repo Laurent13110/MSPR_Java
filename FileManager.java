@@ -22,4 +22,13 @@ public class FileManager {
         return reader;
     }
 
+    public void write(String Iteme , String nomAgent) throws IOException {
+
+       
+        FileWriter fw = new FileWriter(manager.getReader());
+      fw.write(Iteme);
+    }
+
+  
+
 }
