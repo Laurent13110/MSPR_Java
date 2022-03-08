@@ -18,20 +18,21 @@ public class Main
     return value;
   }
 
-  public static String RecupItem(String typeEquip) throws IOException 
+  public static String addItem(String typeEquip, String nomAgent) throws IOException 
   {
-    // Création d’un fileReader pour lire le fichier
-    FileReader fileReader = new FileReader("text/liste.txt");
+   
+    FileManager manager = new FileManager();
+    BufferedReader obj = new BufferedReader (manager.getReader());
+    String strng = obj.readLine();  
 
-    // Création d’un bufferedReader qui utilise le fileReader 
-    BufferedReader obj = new BufferedReader (fileReader);
-
-    String strng =strng = obj.readLine();  
     while (strng == typeEquip)
     {
       System.out.println(strng);
       strng = obj.readLine();
     }
+   
+    manager.openFile(nomAgent);
+    manager.write(strng,nomAgent);
     return strng;
   }
 
