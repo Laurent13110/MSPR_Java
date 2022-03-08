@@ -20,7 +20,6 @@ public class Main
 
   public static String addItem(String typeEquip, String nomAgent) throws IOException 
   {
-   
     FileManager manager = new FileManager();
     BufferedReader obj = new BufferedReader (manager.getReader());
     String strng = obj.readLine();  
@@ -30,8 +29,9 @@ public class Main
       System.out.println(strng);
       strng = obj.readLine();
     }
-   
+    
     manager.openFile(nomAgent);
+    //ecrit a la fin du ficher le nouvelle equiment 
     manager.write(strng,nomAgent);
     return strng;
   }
